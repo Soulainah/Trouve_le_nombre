@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trouve le Nombre</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Trouve le nombre</h1>
+        <p>Trouve le bon nombre entre 0 et 100. Tu as 6 essais</p>
+        <div class="vies">
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="heart"></ion-icon>
+        </div>
+        <form id="inputBox">
+            <label for="number">Entrez un nombre</label> <!--required veut dire que tant qu'on a pas ajouter de nombr eon ne peux pas envoyer-->
+            <input type="number" id="number" min="0" max="100" required> <!--min et max veut dire qu'on peut ajouter minimum 0 et maximum 100-->
+            <button type="submit" id="essayerBtn">Essayer</button>
+            <p id="message">Lorem ipsum dolor sit amet.</p>
+            <button id="rejouer">Rejouer ?</button>
+        </form>
+        <p id="details">* Brûlant = &plusmn; 2 ; Chaud = &plusmn; 5 ; Tiède = &plusmn; 10 ; Froid = + de 10 ;</p>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
